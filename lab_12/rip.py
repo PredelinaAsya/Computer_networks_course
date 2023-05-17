@@ -42,10 +42,10 @@ class Network:
                 print(f'Simulation step {step} of router {src.name}:')
                 src.print_routing_table()
                 print()
-            for node in self.nodes:
-                print(f'Final state of router {node.name}:')
-                node.print_routing_table()
-                print()
+        for node in self.nodes:
+            print(f'Final state of router {node.name}:')
+            node.print_routing_table()
+            print()
 
 
 def get_graph_structure(filepath: str):
